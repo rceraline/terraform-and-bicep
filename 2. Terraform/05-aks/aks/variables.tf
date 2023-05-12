@@ -36,3 +36,9 @@ variable "route_table_associations" {
     subnet_name      = string
   }))
 }
+
+variable "vm_password" {
+  type        = string
+  description = "Password of the virtual machine."
+  sensitive   = true
+}
